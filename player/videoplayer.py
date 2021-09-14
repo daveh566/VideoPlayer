@@ -80,14 +80,14 @@ async def stream(client, m: Message):
                         AudioParameters(
                             bitrate=48000,
                         ),
-                    ),
-                    InputVideoStream(
-                        video_file,
-                        VideoParameters(
-                            width=640,
-                            height=360,
-                            frame_rate=20,
-                        ),
+                   ),
+                   InputVideoStream(
+                       video_file,
+                       VideoParameters(
+                           width=640,
+                           height=360,
+                           frame_rate=24,
+                           ),
                     ),
                     stream_type=StreamType().local_stream,
                 )
