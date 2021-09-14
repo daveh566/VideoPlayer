@@ -29,7 +29,7 @@ async def start(client, message):
           reply_markup=reply_markup
        )
    else:
-      await message.reply(f"**@{ASSISTANT_NAME} is Alive! ✨**")
+      await message.reply(f"**Hey I'm online PM me for more on how you can utilize my potential**")
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
