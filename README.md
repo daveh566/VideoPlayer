@@ -1,4 +1,4 @@
-# VC Video Player
+# NellyX Vc Player
 
 <a href="https://t.me/KayAspirerProject"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
 <a href="t.me/KayAspirerProject"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
@@ -11,8 +11,9 @@ The easiest way to deploy this Bot is via Heroku.
 
 <p align="left"><a href="https://heroku.com/deploy?template=https://github.com/daveh566/VideoPlayer"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
-
-
+#
+String Session
+-[DavehPyrogramStringSession](https://replit.com/@daveh566/GenerateStringSession)
 # Credit 🔥 
 
 - [MarshalX](https://github.com/MarshalX) for [pytgcalls](https://github.com/MarshalX/tgcalls)
