@@ -80,14 +80,14 @@ async def stream(client, m: Message):
                         AudioParameters(
                             bitrate=48000,
                         ),
-                   ),
-                   InputVideoStream(
-                       video_file,
-                       VideoParameters(
-                           width=640,
-                           height=360,
-                           frame_rate=24,
-                           ),
+                    ),
+                    InputVideoStream(
+                        video_file,
+                        VideoParameters(
+                            width=640,
+                            height=360,
+                            frame_rate=20,
+                        ),
                     ),
                     stream_type=StreamType().local_stream,
                 )
@@ -132,7 +132,7 @@ async def stream(client, m: Message):
                 ),
                 stream_type=StreamType().local_stream,
             )
-            await msg.edit_caption("**Started Video Stream!**")
+            await msg.edit_caption("**Started Streaming!**")
         except Exception as e:
             await msg.edit_caption(f"**Error** -- `{e}`")
             await idle()
@@ -181,7 +181,7 @@ async def chstream(client, m: Message):
                     return
             else:
                 livelink = query
-                msg = await m.reply("`Starting Video Stream🤗...`")
+                msg = await m.reply("`Starting Video Stream...`")
                     
             chat_id = CHANNEL
             process = raw_converter(livelink, f'audio{chat_id}.raw', f'video{chat_id}.raw')
@@ -217,10 +217,10 @@ async def chstream(client, m: Message):
                 await msg.edit(f"**Error** -- `{e}`")
    
     elif replied.video or replied.document:
-        msg = await m.reply("`Wait...Downloading...Join @intimacyfolkz for support`")
+        msg = await m.reply("`Downloading...`")
         video = await client.download_media(m.reply_to_message)
         chat_id = CHANNEL
-        await msg.edit("`Take a sip ...Processing...`")
+        await msg.edit("`Processing...`")
         os.system(f"ffmpeg -i '{video}' -f s16le -ac 1 -ar 48000 'audio{chat_id}.raw' -y -f rawvideo -r 20 -pix_fmt yuv420p -vf scale=640:360 'video{chat_id}.raw' -y")
         try:
             audio_file = f'audio{chat_id}.raw'
