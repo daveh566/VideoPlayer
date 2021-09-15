@@ -40,7 +40,7 @@
             "required": true
         },
         "SOURCE_CODE": {
-            "description": "put your GitHub link like this GitHub.com/Sammy-XD/VcVideoPlayer",
+            "description": "put your GitHub link like this GitHub.com/daveh566/VideoPlayer",
             "required": true 
         },
         "BOT_USERNAME": {
