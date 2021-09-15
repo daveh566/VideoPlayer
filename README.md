@@ -13,8 +13,8 @@ The easiest way to deploy this Bot is via Heroku.
 
 #String Session
 -[DavehPyrogramStringSession](https://replit.com/@daveh566/GenerateStringSession)
-# Credit 🔥 
-
+# Credit 🔥 solely inspired by decode
+- [Decode](https://t.me/DeCodeSupport)
 - [MarshalX](https://github.com/MarshalX) for [pytgcalls](https://github.com/MarshalX/tgcalls)
 - [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
 
