@@ -1,6 +1,6 @@
-# ♥️NellyXVcPlayer♥️
+# ♥️NellyXPlayer♥️
 
-# Support [🥇Group🥇](https://t.me/KayAspirerProject)
+# Support [🥇Group](https://t.me/KayAspirerProject)
 ![logo](https://telegra.ph/file/97b79e8542cc0b851c61d.jpg)
 # How To Host 
 [![Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/daveh566/VideoPlayer&envs=ADMIN,API_ID,API_HASH,BOT_TOKEN,SESSION_NAME,BOT_USERNAME,ASSISTANT_NAME,UPDATES_CHANNEL,SUPPORT_GROUP,SUDO_USERS)
