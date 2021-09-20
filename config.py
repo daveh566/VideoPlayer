@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 admins = {}
+AUDIO_CALL = {}
+VIDEO_CALL = {}
 ADMIN = int(os.getenv('ADMIN',1956381927))
 CHANNEL = int(os.getenv('CHANNEL',12345))
 API_ID = int(os.getenv("API_ID", "6"))
