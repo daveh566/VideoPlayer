@@ -1,4 +1,4 @@
-import os
+Upimport os
 import re
 import sys
 import time
@@ -11,6 +11,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from pytgcalls import GroupCallFactory
 from config import AUDIO_CALL, VIDEO_CALL
+from helper.decorators import authorized_users_only
 from youtubesearchpython import VideosSearch
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
@@ -24,7 +25,7 @@ ydl = YoutubeDL(ydl_opts)
 group_call = GroupCallFactory(User, GroupCallFactory.MTPROTO_CLIENT_TYPE.PYROGRAM).get_group_call()
 
 
-@Client.on_message(filters.command("stream))
+@Client.on_message(filters.command("stream"))
 async def stream(client, m: Message):
     msg = await m.reply_text("🔄 `Processing ...`")
     chat_id = m.chat.id
@@ -132,7 +133,7 @@ async def stream(client, m: Message):
     )
 
 
-@Client.on_message(filters.command("pause))
+@Client.on_message(filters.command("pause"))
 @authorized_users_only
 async def pause(_, m: Message):
     chat_id = m.chat.id
@@ -146,10 +147,10 @@ async def pause(_, m: Message):
         await m.reply_text("**Paused Video Streaming !**")
 
     else:
-        await m.reply_text("**Noting Is Streaming !**")
+        await m.reply_text("**Nothing Is Streaming !**")
 
 
-@Client.on_message(filters.command("resume))
+@Client.on_message(filters.command("resume"))
 @authorized_users_only
 async def resume(_, m: Message):
     chat_id = m.chat.id
@@ -166,7 +167,7 @@ async def resume(_, m: Message):
         await m.reply_text("**Noting Is Streaming !**")
 
 
-@Client.on_message(filters.command("stopstream))
+@Client.on_message(filters.command("stopstream"))
 @authorized_users_only
 async def endstream(client, m: Message):
     msg = await m.reply_text("🔄 `Processing ...`")
